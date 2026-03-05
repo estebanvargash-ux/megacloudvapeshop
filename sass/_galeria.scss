@@ -1,0 +1,107 @@
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.galeria-card {
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 14px;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+
+    h4 {
+        margin-bottom: 16px;
+        font-size: 1.1rem;
+    }
+}
+
+.galeria-imagenes {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    img {
+        width: 100%;
+        max-width: 120px;
+        object-fit: contain;
+        border-radius: 8px;
+        background: #fff;
+        padding: 6px;
+    }
+}
+
+.img-zoom {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.35s ease, filter 0.35s ease;
+
+        &:hover {
+            transform: scale(1.15);
+            filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.35));
+        }
+    }
+}
+
+@media (hover: none) {
+    .img-zoom img:hover {
+        transform: none;
+        filter: none;
+    }
+}
+
+/* Fixes Bootstrap & Galería Pro */
+.carousel {
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    img {
+        max-height: 260px;
+        object-fit: contain;
+        padding: 20px;
+        background: transparent;
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+    opacity: 0.8;
+    &:hover { opacity: 1; }
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.55);
+    border: none;
+    border-radius: 18px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 24px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: auto;
+        border-radius: 10px;
+        font-weight: 600;
+        background: linear-gradient(135deg, #142cc6, #c9a24d);
+        border: none;
+    }
+}

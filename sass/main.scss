@@ -1,0 +1,13 @@
+//sass --watch sass/main.scss Styles/styles.css 
+
+@use "variables" as *;
+@use "mixins" as *;
+@use "reset";
+@use "global";
+@use "header";
+@use "footer";
+@use "components";
+@use "home";
+@use "galeria";
+@use "contacto";
+@use "responsive";

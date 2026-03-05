@@ -1,0 +1,22 @@
+body {
+    font-family: "Inter", sans-serif;
+    background: #0f0f14 url("../assets/fondo_pagina.png") center / cover fixed;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 6rem;
+
+    h2 {
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        margin-left: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+}
