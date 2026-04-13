@@ -4,6 +4,10 @@
     z-index: 1000;
     background: #0f0f14;
     transition: background 0.4s ease, box-shadow 0.4s ease;
+    &.header-active {
+        background-color: rgba(255, 255, 255, 0.95); // Ajusta a tu gusto
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 0.8rem 0;}
 
     &::after {
         content: "";

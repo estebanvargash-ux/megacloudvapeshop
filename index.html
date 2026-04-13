@@ -158,6 +158,26 @@
     <a href="https://wa.me/56995733258" class="whatsapp-float" target="_blank" rel="noopener">
         <img src="./assets/logo.whatsapp.png" alt="WhatsApp">
     </a>
+    <div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h3>Tu Carrito</h3>
+        <button id="close-cart" class="close-btn">&times;</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+        </div>
+    <div class="cart-footer">
+        <div class="total-container">
+            <span>Total:</span>
+            <span id="cart-total">$0</span>
+        </div>
+        <button class="checkout-btn">Finalizar Compra por WhatsApp</button>
+        <button onclick="openCart()" class="cart-float" style="position:fixed; bottom:100px; right:32px; width:56px; height:56px; border-radius:50%; background:#1a1a1a; color:white; border:none; z-index:9998; cursor:pointer; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
+    🛒
+</button>
+    </div>
+</div>
+<div id="cart-overlay" class="cart-overlay"></div>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
